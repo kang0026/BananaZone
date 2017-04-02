@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<html>
+  <head>
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="application.css" type="text/css" />
+
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+<nav class="navbar navbar-default" role="navigation">
+
+<div class="container-fluid">
+
+  <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <ul class="nav navbar-brand mylogo">
+        <li>Banana Zone</li>
+      </ul>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <!-- Search Bar -->
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+
+      <ul class="nav navbar-nav navbar-right">
+
+            <li><%= link_to "Home", {:controller => 'welcome', :action => 'index'} %></li>
+
+            <li><%= link_to "Blogs", "#" %></li>
+
+            <li><%= link_to "Bash Scripts", {:controller => 'my_bash_scripts', :action => 'index'} %></li>
+
+            <li class = "dropdown">
+
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+               App Play
+               <b class = "caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+
+               <li><%= link_to "Login X", "#" %></li>
+               <li><%= link_to "Sign Up", new_user_path %></li>
+               <li><%= link_to "Simple_cms X", "#" %></li>
+               <li><%= link_to "Lily's Bakery X", "#" %></li>
+               <li><%= link_to "Grade Calculator", {:controller => 'grade_calculator', :action => 'index'} %></li>
+               <li><%= link_to "JS Calculator", {:controller => 'calculator', :action => 'index'} %></li>
+                <li><%= link_to "Breakout Game", {:controller => 'break_out', :action => 'index'} %></li>
+
+
+            </ul>
+
+            <li class = "dropdown">
+
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+               News
+               <b class = "caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+
+               <li><%= link_to "Cat1", "#" %></li>
+               <li><%= link_to "Cat2", "#" %></li>
+               <li><%= link_to "Cat3", "#" %></li>
+
+            </ul>
+
+
+             <li class = "dropdown">
+
+            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+               About
+               <b class = "caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+
+               <li><%= link_to "Personal Profile", "#" %></li>
+               <li><%= link_to "Site FAQ", "#" %></li>
+               <li><%= link_to "Contact", "#" %></li>
+
+            </ul>
+
+      </ul>
+
+
+
+    </div><!-- /.navbar-collapse -->
+
+</div> <!-- /.container-fluid -->
+
+</nav>
+          <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+
+
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+   </body>
+
+
+
+    <!-- Footer -->
+    <footer>
+           
+            <p>Copyright &copy; Michelle - Bei Bei Li 2017</p>
+    </footer>
+
+      <%= debug(params) if Rails.env.development? %>
+
+
+
+  </body>
+</html>

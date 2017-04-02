@@ -1,0 +1,114 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	background: #990000;
+}
+
+table{
+	table-layout: fixed;
+	width: 95%;
+	margin-left: 10px;
+	border: 1px double #B0B0B0;
+	border-collapse: collapse;
+	margin-right: 200px;
+}
+
+input{
+	width: 40%;
+	height:40%;
+	margin-left: 5px;
+}
+
+
+
+
+
+th{
+	background-color: #e6e6e6;
+	text-align: left;
+	margin-left: 8px;
+	border: 1px double #B0B0B0;
+	height: 30px;
+}
+
+
+td{
+	background-color: #eff3f6;
+	text-align: left;
+	margin-left: 8px;
+	height: 75px;
+	border: 1px double #B0B0B0;
+}
+
+th, td{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+	
+#top{
+	background: #1a1a1a;
+	margin: -10px 45px 60px 45px;
+}
+
+#wht{
+	background: white;
+	margin: 15px 1px 2px;
+}
+	
+#gr{
+	background: #eff3f6;
+	margin: 15px 250px 15px 30px;
+}
+
+#GC{
+	margin-left: 30px; 
+	font-family: Helvetica;
+	font-size: 180%;
+}
+
+#act, #result{
+	font-weight: bold;
+	color: #990000;
+	font-size: 125%;
+	margin-left: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#LETTER, #WEIGHTED, #MEAN{
+	margin-left: 10px;
+}
+
+#give{
+	margin-left: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+button{
+    background-color: #cc0000; 
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Helvetica;
+    display: inline-block;
+    font-size: 80%;
+    margin-right: 20px;
+    padding: 10px 15px;
+
+}
+
+
+
+
+
+
+
+
+

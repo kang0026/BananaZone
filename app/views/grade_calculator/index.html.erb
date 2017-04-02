@@ -1,0 +1,122 @@
+
+  <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+
+
+<!DOCTYPE html>  
+
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>CourSys - Formula Tester</title>
+  </head>
+
+
+<body id="gcbody">  <!--user level-->
+
+<div id="top">
+<br>
+<div id="wht">
+
+<br>
+<br>
+<br>
+<div id="GC">Grade Calculator</div>
+
+<div id="gr">
+<br>
+<br>
+
+<div id="act">Activities</div>
+<br>
+<br>
+<div id="give">Give grades to the numeric activities</div>
+<br>
+<br>
+
+<div id="tb">
+<table style="width:95%">
+  <tr>
+    <th class="block">Name</th>
+    <th class="block">Short Name</th>
+    <th class="block">Weight</th>
+    <th class="block">Grade</th>
+    <th class="block">Percent</th>
+  </tr>
+  <tr>
+    <td class="block">Activity 1</td>
+    <td class="block">A1</td>
+    <td class="block"><input type="value" name="weight"></td>
+    <td class="block"><input type="value" name="grnum">
+    <div id="centreop">/</div>
+    <input type="value" name="grdem"></td>
+    <td class="block" name="percent"></td>
+  </tr>
+
+    <tr>
+    <td class="block">Activity 2</td>
+    <td class="block">A2</td>
+    <td class="block"><input type="value" name="weight"></td>
+    <td class="block"><input type="value" name="grnum">
+    <div id="centreop">/</div>
+    <input type="value" name="grdem"></td>
+    <td class="block" name="percent"></td>
+  </tr>
+
+  <tr>
+    <td class="block">Activity 3</td>
+    <td class="block">A3</td>
+    <td class="block"><input type="value" name="weight"></td>
+    <td class="block"><input type="value" name="grnum">
+    <div id="centreop">/</div>
+    <input type="value" name="grdem"></td>
+    <td class="block" name="percent"></td>
+    </form>
+  </tr>
+
+  <tr>
+    <td class="block">Activity 4</td>
+    <td class="block">A4</td>
+    <td class="block"><input type="value" name="weight"></td>
+    <td class="block"><input type="value" name="grnum"> 
+    <div id="centreop">/</div>
+    <input type="value" name="grdem"></td>
+    <td class="block" name="percent"></td>
+  </tr>
+
+  </table>
+  </div>
+
+
+
+<br>
+<br>
+<div id="result">Result</div>
+<p id="LETTER"></p>
+<p id="WEIGHTED"></p>
+<p id="MEAN"></p>
+<br>
+<p align="right">
+<button type="button" id="butl" onclick="LETTER()">LETTER</button>
+<button type="button" id="butw" onclick="WEIGHTED()">WEIGHTED</button>
+<button type="button" id="butm" onclick="MEAN()">MEAN</button> 
+<button type="button" id="butc" onclick="CLEAR()">CLEAR ALL</button>
+</p>
+
+
+
+<br>
+<br>
+</div>
+
+<br>
+<br>
+</div>
+
+<br>
+<br>
+<br>
+</div>
+</body>
+
+</html>
